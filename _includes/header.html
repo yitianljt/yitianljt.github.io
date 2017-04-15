@@ -1,24 +1,20 @@
-  <header class="header">
+<header class="main-header content-wrapper">
 
-    {% if site.avatar %}
-      <div class="header__logo">
-        <a href="{{ site.baseurl }}/" class="header__link--logo">
-        <!-- <div class="spinner"></div> -->
-        <img src="{{ site.avatar }}"></a>
-      </div>
-    {% else %}
-      <h1 class="header__logo">
-        <a href="{{ site.baseurl }}/" class="header__link--logo">{{ site.title }}</a>
-      </h1>
-    {% endif %}
+  <input type="checkbox" id="menu-checkbox" />
 
-    <nav class="header__nav" role="navigation">      
-      <a href="{{ site.baseurl }}/archive/" class="header__link">Archive</a>
-      <a href="http://twitter.com/{{ site.twitter_username }}" class="header__link" target="_blank">Twitter</a>
-      <!-- <a href="http://github.com/{{ site.github_username }}" class="header__link" target="_blank">Github</a> -->
-      <a href="http://facebook.com/{{ site.facebook_username }}" class="header__link" target="_blank">Facebook</a>
-      <a href="{{ site.baseurl }}/about/" class="header__link">About</a>
-    </nav>
-  </header>
+  <nav class="center-wrapper nav-main">
 
-  <main class="col">
+    <a class="blog-logo" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+    {% for my_page in site.pages %}
+      {% if my_page.active %}
+        <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+      {% endif %}
+    {% endfor %}
+
+    <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+
+    <label for="menu-checkbox" class="toggle-button" data-open="☰" data-close="☰" onclick></label>
+  </nav>
+
+</header>
