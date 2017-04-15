@@ -1,59 +1,37 @@
-## Voyager
+## Welcome to GitHub Pages
 
-Just another jekyll theme. Demo: <http://redvi.github.io/voyager>
+You can use the [editor on GitHub](https://github.com/yitianljt/yitianljt.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-### Feathures:
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-All HTML files are compressed (see `_layouts/compress.html`).
+### Markdown
 
-**Post**
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-All post settings can be changed. Example:
+```markdown
+Syntax highlighted code block
 
-```
----
-layout: post
-bg: '2016/background.jpg'
-title: "Post Heading"
-crawlertitle: "page title"
-summary: "post description"
-date: 2016-06-29
-tags : ['front-end']
-slug: post-url
-author: "Author"
-categories: posts
----
-```
+# Header 1
+## Header 2
+### Header 3
 
-`bg` is a path to background of your article. By default backgrounds are placed in the `assets/images` directory.
+- Bulleted
+- List
 
-**Page**
+1. Numbered
+2. List
 
-If page contains `active` tag, it will be show on site menu.
+**Bold** and _Italic_ and `Code` text
 
-```
----
-layout: page
-title: "About"
-permalink: /about/
-active: about
----
+[Link](url) and ![Image](src)
 ```
 
-**Archive**
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-Archive page is sorting posts by tags. No more than one tag in one post.
+### Jekyll Themes
 
-Good:
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yitianljt/yitianljt.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-```
-tags : ['front-end']
-```
+### Support or Contact
 
-Bad:
-
-```
-tags : ['front-end', 'jekyll']
-```
-
-Don't forget to change `_config.yml`.
+Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
